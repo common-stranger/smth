@@ -144,7 +144,7 @@
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <layout delimiter=", ">
+    <layout vertical-align="sup" delimiter=", ">
       <text variable="citation-number" prefix="[" suffix="]"/>
     </layout>
   </citation>
@@ -171,15 +171,15 @@
           <group delimiter=", ">
             <text variable="container-title" form="short" font-style="italic"/>
             <text macro="issued" font-weight="bold"/>
-            <choose>
+            <!--choose>
               <if variable="DOI">
                 <text macro="doi"/>
               </if>
-              <else>
+              <else-->
                 <text macro="locators"/>
                 <text macro="page"/>
-              </else>
-            </choose>
+              <!--/else>
+            </choose-->
           </group>
         </else-if>
         <else-if type="paper-conference">
